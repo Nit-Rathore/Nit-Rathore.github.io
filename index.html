@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nitish Rathore — Software Engineer, ML & Data Systems</title>
+<meta name="description" content="Nitish Rathore: software engineer building ML systems and real-time data platforms. M.S. Computer Science at UMass Amherst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Nitish Rathore</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <button id="theme" aria-label="Toggle theme" title="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow mono">Software Engineer · ML &amp; Data Systems</p>
+    <h1>Nitish Rathore</h1>
+    <p class="lead">I build computer vision pipelines and real-time data platforms, from GPU inference services that coach a swing to analytics systems ingesting 10M+ sensor events a day.</p>
+    <div class="cta">
+      <a class="btn primary" href="data/Nitish_Rathore_Resume_Software.pdf" target="_blank" rel="noopener">Resume (Software)</a>
+      <a class="btn" href="data/Nitish_Rathore_Resume_ML.pdf" target="_blank" rel="noopener">Resume (ML)</a>
+      <a class="btn" href="https://github.com/Nit-Rathore" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/nitish-vinay-rathore" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <img class="photo" src="images/profile.jpg" alt="Nitish Rathore" width="200" height="200" onerror="this.style.display='none'">
+</section>
+
+<section class="stats-wrap">
+  <dl class="stats">
+    <div><dt>10M+</dt><dd>daily sensor events ingested</dd></div>
+    <div><dt>100–500 ms</dt><dd>queries over 1M+ record tables</dd></div>
+    <div><dt>40%</dt><dd>faster model inference</dd></div>
+    <div><dt>80%+</dt><dd>fast-ball tracking accuracy</dd></div>
+  </dl>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About</h2>
+  <p class="about">I'm a software engineer who works across ML systems and data platforms. Most recently I built a multi-tenant IoT analytics platform at KangaSys; before that I led computer vision for SlamDunk.AI at Pronisi, shipping GPU-served detection and pose pipelines. I'm now pursuing an M.S. in Computer Science at UMass Amherst, with coursework in machine learning, trustworthy and responsible AI, and software engineering.</p>
+  <ul class="updates">
+    <li><span class="mono">Sep 2026</span> Started M.S. in Computer Science at UMass Amherst.</li>
+    <li><span class="mono">Mar 2025</span> Joined KangaSys to build a real-time analytics platform on ClickHouse and AWS.</li>
+    <li><span class="mono">2023</span> Best Presenter at IEEE BDAI 2023 for urban growth modeling research.</li>
+  </ul>
+</section>
+
+<section id="experience" class="reveal">
+  <h2>Experience</h2>
+  <div class="timeline">
+
+    <article>
+      <div class="when mono">Mar 2025 – Jun 2026</div>
+      <div class="what">
+        <h3>Software Engineer <em>· KangaSys</em></h3>
+        <p class="sub">Data &amp; analytics platform</p>
+        <ul>
+          <li>Built a multi-tenant IoT analytics platform on ASP.NET Core, ClickHouse and AWS, ingesting 10M+ daily sensor events from Honeywell building management systems.</li>
+          <li>Tuned ClickHouse aggregations and indexing to serve queries in 100–500 ms over 1M+ record time-series tables.</li>
+          <li>Developed Next.js 14 dashboards with 30+ configurable widgets, drag-and-drop layouts and AWS Cognito MFA.</li>
+          <li>Implemented serverless async PDF/CSV report exports (Lambda + SQS), tenant-level RBAC with Permit.io, and automated CI/CD pipelines to AWS.</li>
+        </ul>
+        <p class="tags mono">ASP.NET Core · ClickHouse · AWS · Next.js · Cognito · Lambda · SQS</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="when mono">Jun 2024 – Feb 2025</div>
+      <div class="what">
+        <h3>Software Engineer, ML <em>· Pronisi, Inc.</em></h3>
+        <p class="sub">Led computer vision for SlamDunk.AI, an AI coaching app for tennis, cricket, basketball, golf, yoga and gym</p>
+        <ul>
+          <li>Architected 8 Ray Serve microservices with independent REST routes and RabbitMQ async messaging, running pose, ball, racket and baseline models as concurrent GPU Ray actors.</li>
+          <li>Shipped YOLOv7/v8 ball, racket and golf-club detectors on FP16 PyTorch and ONNX Runtime (CUDA/CPU), cutting inference time by 40%.</li>
+          <li>Raised ball-tracking reliability with DBSCAN false-positive rejection, gap interpolation, and K-Means splitting of multi-stroke clips.</li>
+          <li>Turned 30-keypoint 3D pose (MediaPipe) into form scores using swing-phase detection, FastDTW alignment and SciPy peak detection for rep counting.</li>
+          <li>Used multimodal LLMs for coaching: Gemini 1.5 (Vertex AI) compares user and pro video per rep, with parallel calls and exponential-backoff retries.</li>
+          <li>Contributed to a hybrid recommendation engine (severity-scored faults, Random Forest rep classification) and wrote 24 pytest cases across 20 modules.</li>
+        </ul>
+        <p class="tags mono">Ray Serve · PyTorch · ONNX · YOLO · MediaPipe · RabbitMQ · Gemini · Docker</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="when mono">Jun 2023 – May 2024</div>
+      <div class="what">
+        <h3>Machine Learning Intern <em>· Pronisi, Inc.</em></h3>
+        <ul>
+          <li>Built real-time pose estimation (30 keypoints) and keypoint-based equipment detection with MediaPipe, YOLO, Faster R-CNN, ResNet and SAM.</li>
+          <li>Reached 80%+ accuracy tracking fast-moving balls and equipment with YOLOv7/8 and trajectory smoothing, served on GPU Docker (AWS ECS + CloudWatch).</li>
+          <li>Managed the ML data pipeline end to end and built video APIs for anchor-frame synchronization and split-screen comparison.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <div class="when mono">Jun 2022 – Aug 2022</div>
+      <div class="what">
+        <h3>Research Intern <em>· IIIT Bangalore</em></h3>
+        <ul>
+          <li>Built CNN classifiers for multispectral satellite land-use/land-cover mapping, with cloud masking and statistical band selection to cut compute at similar accuracy.</li>
+          <li>Evaluated spatial accuracy with GRASS GIS, GDAL and Rasterio, contributing to roughly 90% accuracy.</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects &amp; Research</h2>
+  <div class="cards">
+
+    <article class="card">
+      <div class="badge mono">IEEE BDAI 2023 · Best Presenter</div>
+      <h3>Urban Growth Modeling</h3>
+      <p class="tags mono">Python · Keras · GIS</p>
+      <p>Predicted land-use/land-cover change with Cellular Automata tuned by a Genetic Algorithm.</p>
+      <ul>
+        <li>SSIM 0.84 against 2017–2022 satellite maps.</li>
+        <li>Keras classifier on Landsat-5 imagery: F1 0.93, roughly 90% area-wise accuracy on the held-out year.</li>
+        <li>Compared Google Maps, OSRM and OSMnx routes to flag congestion-prone corridors and propose upgrades.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Kafka from Scratch</h3>
+      <p class="tags mono">Python · ZooKeeper · RabbitMQ · Redis</p>
+      <p>A Kafka-style pub/sub system (raw TCP sockets and RabbitMQ versions) built with a team of four.</p>
+      <ul>
+        <li>Three brokers with leader election, 5 s heartbeats and automatic failover.</li>
+        <li>Key-hash partition routing, 3-way replication, and consumer offsets with replay.</li>
+      </ul>
+      <a class="link" href="https://bit.ly/3T8GpCz" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+
+    <article class="card">
+      <h3>Microservices with RabbitMQ</h3>
+      <p class="tags mono">Python · Flask · RabbitMQ · MongoDB · Docker</p>
+      <p>A Flask REST producer routing requests through RabbitMQ exchanges to 4 dedicated consumer services.</p>
+      <ul>
+        <li>Pub/sub and work-queue patterns with durable queues and manual acks for at-least-once delivery.</li>
+        <li>Six-container stack orchestrated with docker-compose across two custom networks.</li>
+      </ul>
+      <a class="link" href="https://bit.ly/457wShz" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h4>Languages</h4><p>Python, C/C++, SQL, Java, C#, JavaScript, TypeScript</p></div>
+    <div><h4>Deep Learning &amp; CV</h4><p>PyTorch, TensorFlow, OpenCV, YOLO, MediaPipe, Faster R-CNN, ResNet, SAM, ONNX Runtime</p></div>
+    <div><h4>ML &amp; Data Science</h4><p>scikit-learn, SciPy, NumPy, Pandas, FastDTW, time series</p></div>
+    <div><h4>LLMs &amp; GenAI</h4><p>Gemini (Vertex AI), OpenAI API, multimodal prompting</p></div>
+    <div><h4>Backend &amp; APIs</h4><p>ASP.NET Core, Ray Serve, REST, microservices, event-driven architecture, Pytest</p></div>
+    <div><h4>Data &amp; Messaging</h4><p>ClickHouse, MongoDB, Redis, RabbitMQ, Kafka, ZooKeeper</p></div>
+    <div><h4>Cloud &amp; DevOps</h4><p>AWS (Lambda, SQS, Cognito, S3, EC2, ECS), Docker, Kubernetes, GitHub Actions, CI/CD, Linux</p></div>
+    <div><h4>Frontend</h4><p>React, Next.js</p></div>
+  </div>
+</section>
+
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <div class="edu">
+    <article>
+      <div class="when mono">Sep 2026 – May 2028 (expected)</div>
+      <div>
+        <h3>M.S. Computer Science <em>· University of Massachusetts Amherst</em></h3>
+        <p>Machine Learning · Trustworthy &amp; Responsible AI · Theory &amp; Practice of Software Engineering</p>
+      </div>
+    </article>
+    <article>
+      <div class="when mono">Dec 2020 – May 2024</div>
+      <div>
+        <h3>B.Tech Computer Science &amp; Engineering <em>· PES University</em></h3>
+        <p>GPA 8.66/10 · Data Structures &amp; Algorithms · Database Systems · Operating Systems · Cloud Computing · Big Data</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="reveal contact">
+  <h2>Contact</h2>
+  <p class="lead">Open to internships and roles in ML systems and data infrastructure. The fastest way to reach me is email.</p>
+  <div class="cta">
+    <a class="btn primary" href="mailto:nitishrathore9@gmail.com">nitishrathore9@gmail.com</a>
+    <a class="btn" href="https://linkedin.com/in/nitish-vinay-rathore" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/Nit-Rathore" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="mono">© <span id="yr"></span> Nitish Rathore · Amherst, MA</p>
+</footer>
+
+<script>
+  const root = document.documentElement;
+  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+  document.getElementById('theme').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark'
+      : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
