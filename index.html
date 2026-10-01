@@ -5,47 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nitish Rathore — Software Engineer, ML & Data Systems</title>
 <meta name="description" content="Nitish Rathore: software engineer building ML systems and real-time data platforms. M.S. Computer Science at UMass Amherst.">
+<meta name="theme-color" content="#f7f8fa">
+<meta property="og:title" content="Nitish Rathore — Software Engineer">
+<meta property="og:description" content="Software engineer building ML systems and real-time data platforms.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="nav">
-  <a class="brand" href="#top">Nitish Rathore</a>
+  <a class="brand" href="#top" aria-label="Nitish Rathore, home"><span class="brand-mark">N</span><span>Nitish Rathore</span></a>
   <nav>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
+    <a href="#writing">Writing</a>
     <a href="#contact">Contact</a>
-    <button id="theme" aria-label="Toggle theme" title="Toggle theme">◐</button>
+    <button id="theme" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">◐</button>
   </nav>
 </header>
 
-<main id="top">
+<main id="main">
 
-<section class="hero">
+<section id="top" class="hero">
   <div class="hero-text">
-    <p class="eyebrow mono">Software Engineer · ML &amp; Data Systems</p>
-    <h1>Nitish Rathore</h1>
-    <p class="lead">I build computer vision pipelines and real-time data platforms, from GPU inference services that coach a swing to analytics systems ingesting 10M+ sensor events a day.</p>
+    <p class="eyebrow"><span class="availability-dot"></span> Open to software engineering opportunities</p>
+    <h1>Hi, I’m <span>Nitish Rathore.</span></h1>
+    <p class="hero-role">Software Engineer <span>·</span> ML Systems &amp; Data Infrastructure</p>
+    <p class="lead">I build production ML systems and real-time data platforms—from GPU-powered computer vision services to analytics pipelines handling 10M+ sensor events a day.</p>
+    <p class="hero-location mono">Currently pursuing an M.S. in Computer Science <span>·</span> Amherst, MA</p>
     <div class="cta">
-      <a class="btn primary" href="data/Nitish_Rathore_Resume_Software.pdf" target="_blank" rel="noopener">Resume (Software)</a>
-      <a class="btn" href="data/Nitish_Rathore_Resume_ML.pdf" target="_blank" rel="noopener">Resume (ML)</a>
-      <a class="btn" href="https://github.com/Nit-Rathore" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/nitish-vinay-rathore" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn primary" href="data/Nitish_Rathore_Resume_Software.pdf" target="_blank" rel="noopener">View software resume <span aria-hidden="true">↗</span></a>
+      <a class="btn" href="data/Nitish_Rathore_Resume_ML.pdf" target="_blank" rel="noopener">View ML resume <span aria-hidden="true">↗</span></a>
+      <a class="btn text-btn" href="https://linkedin.com/in/nitish-vinay-rathore" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
   </div>
-  <img class="photo" src="images/profile.jpg" alt="Nitish Rathore" width="200" height="200" onerror="this.style.display='none'">
+  <figure class="portrait">
+    <div class="portrait-frame">
+      <div class="portrait-placeholder" aria-hidden="true">
+        <span class="portrait-initials">NR</span>
+        <span class="portrait-caption mono">YOUR PHOTO HERE</span>
+      </div>
+      <img src="images/profile.jpg" alt="Portrait of Nitish Rathore" width="480" height="600" onerror="this.hidden = true">
+    </div>
+    <figcaption class="portrait-hint">Add a headshot at <code>images/profile.jpg</code></figcaption>
+  </figure>
 </section>
 
-<section class="stats-wrap">
+<section class="stats-wrap" aria-label="Career highlights">
   <dl class="stats">
-    <div><dt>10M+</dt><dd>daily sensor events ingested</dd></div>
-    <div><dt>100–500 ms</dt><dd>queries over 1M+ record tables</dd></div>
+    <div><dt>10M+</dt><dd>sensor events ingested daily</dd></div>
+    <div><dt>100–500 <small>ms</small></dt><dd>queries over 1M+ records</dd></div>
     <div><dt>40%</dt><dd>faster model inference</dd></div>
     <div><dt>80%+</dt><dd>fast-ball tracking accuracy</dd></div>
   </dl>
@@ -53,7 +67,7 @@
 
 <section id="about" class="reveal">
   <h2>About</h2>
-  <p class="about">I'm a software engineer who works across ML systems and data platforms. Most recently I built a multi-tenant IoT analytics platform at KangaSys; before that I led computer vision for SlamDunk.AI at Pronisi, shipping GPU-served detection and pose pipelines. I'm now pursuing an M.S. in Computer Science at UMass Amherst, with coursework in machine learning, trustworthy and responsible AI, and software engineering.</p>
+  <p class="about">I’m a software engineer who works across ML systems and data platforms. Most recently, I built a multi-tenant IoT analytics platform at KangaSys; before that, I led computer vision for SlamDunk.AI at Pronisi, shipping GPU-served detection and pose pipelines. I’m pursuing an M.S. in Computer Science at UMass Amherst, with coursework in machine learning, trustworthy and responsible AI, and software engineering.</p>
   <ul class="updates">
     <li><span class="mono">Sep 2026</span> Started M.S. in Computer Science at UMass Amherst.</li>
     <li><span class="mono">Mar 2025</span> Joined KangaSys to build a real-time analytics platform on ClickHouse and AWS.</li>
@@ -124,7 +138,8 @@
 </section>
 
 <section id="projects" class="reveal">
-  <h2>Projects &amp; Research</h2>
+  <h2>Selected Projects</h2>
+  <p class="section-intro">A few examples of the systems and applied research I’ve built, from distributed messaging to geospatial ML.</p>
   <div class="cards">
 
     <article class="card">
@@ -161,6 +176,18 @@
       <a class="link" href="https://bit.ly/457wShz" target="_blank" rel="noopener">View on GitHub →</a>
     </article>
 
+  </div>
+</section>
+
+<section id="writing" class="reveal">
+  <h2>Writing &amp; Articles</h2>
+  <div class="writing-card">
+    <span class="writing-icon" aria-hidden="true">✎</span>
+    <div>
+      <p class="writing-label mono">COMING SOON</p>
+      <h3>Notes from building ML systems</h3>
+      <p>I’m planning to share practical notes on production machine learning, computer vision, and the data infrastructure behind reliable products. Articles will appear here as I publish them.</p>
+    </div>
   </div>
 </section>
 
@@ -216,12 +243,25 @@
 
 <script>
   const root = document.documentElement;
-  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
-  document.getElementById('theme').addEventListener('click', () => {
-    const dark = root.dataset.theme ? root.dataset.theme === 'dark'
-      : matchMedia('(prefers-color-scheme: dark)').matches;
+  const themeButton = document.getElementById('theme');
+  try {
+    root.dataset.theme = localStorage.getItem('theme')
+      || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  } catch (e) {
+    root.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  const updateThemeButton = () => {
+    const dark = root.dataset.theme === 'dark';
+    themeButton.setAttribute('aria-pressed', String(dark));
+    themeButton.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} theme`);
+    themeButton.textContent = dark ? '☼' : '◐';
+  };
+  updateThemeButton();
+  themeButton.addEventListener('click', () => {
+    const dark = root.dataset.theme === 'dark';
     root.dataset.theme = dark ? 'light' : 'dark';
     try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    updateThemeButton();
   });
   document.getElementById('yr').textContent = new Date().getFullYear();
   const io = new IntersectionObserver(es => es.forEach(e => {
